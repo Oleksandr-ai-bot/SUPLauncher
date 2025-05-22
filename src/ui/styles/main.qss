@@ -1,0 +1,173 @@
+/* Основные стили для SUPLAUNCHER */
+
+* {
+    font-family: "Inter";
+    color: #FFFFFF;
+    selection-background-color: #0A84FF;
+    selection-color: #FFFFFF;
+}
+
+QWidget {
+    background-color: #121212;
+    border: none;
+}
+
+QLabel {
+    background: transparent;
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-height: 40px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #252525;
+}
+
+QPushButton:pressed {
+    background-color: #303030;
+}
+
+QPushButton:disabled {
+    background-color: #1A1A1A;
+    color: #757575;
+}
+
+QPushButton#playButton {
+    background-color: #0A84FF;
+    color: white;
+    border-radius: 8px;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton#playButton:hover {
+    background-color: #0071E3;
+}
+
+QPushButton#playButton:pressed {
+    background-color: #0064CC;
+}
+
+/* Поля ввода */
+QLineEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 8px 12px;
+    selection-background-color: #0A84FF;
+    min-height: 24px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #0A84FF;
+}
+
+QLineEdit:disabled {
+    background-color: #1A1A1A;
+    color: #757575;
+}
+
+/* Выпадающие списки */
+QComboBox {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 8px 12px;
+    min-height: 24px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 24px;
+    border-left-width: 0px;
+}
+
+QComboBox::down-arrow {
+    image: url("assets/icons/dropdown_arrow.svg");
+}
+
+QComboBox QAbstractItemView {
+    background-color: #252525;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    selection-background-color: #0A84FF;
+}
+
+/* Скроллбары */
+QScrollBar:vertical {
+    background-color: #1A1A1A;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #333333;
+    min-height: 30px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #444444;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Прогресс-бар */
+QProgressBar {
+    background-color: #1A1A1A;
+    border-radius: 4px;
+    text-align: center;
+    min-height: 8px;
+    max-height: 8px;
+}
+
+QProgressBar::chunk {
+    background-color: #0A84FF;
+    border-radius: 4px;
+}
+
+/* Разделители */
+QFrame[frameShape="4"] { /* HLine */
+    background-color: #333333;
+    max-height: 1px;
+}
+
+QFrame[frameShape="5"] { /* VLine */
+    background-color: #333333;
+    max-width: 1px;
+}
+
+/* Вкладки */
+QTabWidget::pane {
+    border: none;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+}
+
+QTabBar::tab {
+    background-color: #1A1A1A;
+    color: #ABABAB;
+    padding: 8px 16px;
+    margin-right: 4px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:selected {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #252525;
+}
